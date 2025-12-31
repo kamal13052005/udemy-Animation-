@@ -1,0 +1,198 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+    font-family: "Gabarito", sans-serif;
+}
+.container{
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px black solid ;
+    gap: 10px;
+    align-items: center;
+    position: sticky;
+    top: 0;
+        background-color: white;  
+    z-index: 1;                                                                                      
+}
+.header-tittle{
+    font-size: 32px;
+    color: blueviolet;
+}
+.header-search{
+    padding: 10px; 
+    border: 1px black solid;
+    display: flex;
+    width: 60%;
+    gap: 10px;
+    border-radius: 30px;
+    align-items: center;
+}
+.header-search input{
+    border: none;
+    width: 100%;
+    font-size: 16px;
+    background-color: transparent;
+}
+.header-search input:focus{
+    outline: none;
+}
+.header-menu{
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+/* My learnig pop-up */
+.mylearning{
+    position: relative;
+    cursor: pointer;
+}
+.mylearning-popup{
+    position: absolute;
+    border: 2px black solid;
+    padding: 10%;
+    width: 100px;
+    right: 0;
+    top: 150%;
+    display: none;
+}
+.mylearning:hover .mylearning-popup{
+    display: block;
+    background-color: white;
+}
+
+.categories{
+    border-bottom: 1px black solid;
+    display: flex;
+    justify-content: space-around;
+    margin-top: 3px;
+    padding: 10px;
+}
+.categories p{
+    color: white;
+    background-color: rgb(134, 36, 225);
+    padding: 10px;
+    border-radius: 30px;
+  border: 2px grey solid;
+}
+.categories p:hover{
+    color: black;
+    background-color: white;
+    text-decoration: underline;
+    border: 2px grey solid;
+    transition: 1s;
+    cursor: pointer;
+}
+.sale img{
+    border-bottom: 1px solid black;
+}
+.cource-card{
+    width: 250px;
+}
+.cource-card img{
+    width: 100%;
+}
+.recommended{
+    padding: 10px;
+}
+.recommended-container{
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.topics{
+    padding: 10px;
+}
+.topics-container{
+    display: flex;
+    flex-wrap: wrap;
+}
+.topics-container p{
+    border: 2px solid grey;
+    padding: 10px;
+    flex-grow: 1;
+    margin:5px;
+    flex-basis: 25%;
+
+}
+.popular{
+    padding: 10px;
+}
+.popular-container{
+    margin-top: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.footer{
+    background-color: black;
+    color: white;
+    padding: 30px;
+}
+.footer-one{
+    display: flex;
+}
+.footer-two{
+    margin: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.footer-one p{
+    margin: 20px;
+}
+.topics-container p:hover{
+    color: black;
+    background-color: orange;
+    text-decoration: underline;
+}
+.header-menu p:hover{
+    text-decoration: underline;
+}
+.header-menu i:hover{
+    border: 2px orange solid;
+    padding: 2px;
+}
+.header-tittle p:hover{
+    color: aqua;
+}
+.sale{
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+}
+.sale-deals{
+    position: absolute;
+    top: 20%;
+    left: 50px;
+    color: black;
+    background-color: white;
+    border: 1px black solid;
+    padding: 20px;
+    border-radius: 10px;
+    height: 100px;
+    width: 300px;
+    animation-name: zoom;
+    animation-duration: 2s;
+    opacity: 0;
+    animation-fill-mode: forwards;
+}
+@keyframes zoom{
+    0%{
+        transform: scale(0);
+        opacity: 0;
+    }
+    100%{
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+.sale-deals p{
+    margin-top: 10px;
+}
+.footer-one__s1 p:hover, .footer-two__s2 p:hover{
+    text-decoration: underline;
+}
